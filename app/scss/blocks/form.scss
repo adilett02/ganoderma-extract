@@ -1,13 +1,7 @@
 .form {
     padding: 100px 0;
-    // h2 {
-    //     text-align: center;
-    //     color: $primaryColor;
-    //     font-size: 44px;
-    //     font-weight: bold;
-    // }
     h5 {
-        color: $secondaryColor;
+        color: $primaryColor;
         font-weight: bold;
     }
     form {
@@ -15,6 +9,13 @@
     }
     .order-btn {
         background-color: $primaryColor;
+        color: #fff;
+        svg {
+            fill: #fff;
+        }
+        &:hover {
+            background-color: #d95a00;
+        }
     }
 }
 .form-group {
@@ -29,7 +30,6 @@
         &:focus {
             outline: none;
             box-shadow: none;
-            border: 1px solid $secondaryColor;
         }
     }
     .focus-border {
