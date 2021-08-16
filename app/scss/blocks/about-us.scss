@@ -1,6 +1,6 @@
 //about-us
 .about-us {
-    padding-top: 30px;
+    padding-top: 100px;
     h2 {
         text-align: center;
         color: $primaryColor;
@@ -11,81 +11,26 @@
         color: $primaryColor;
         font-size: 34px;
         font-weight: bold;
+        font-family: "PT Serif", serif;
     }
-    img {
-        width: 100%;
+    .about-text {
+        padding: 0;
+        margin-top: 15px;
     }
-}
-.juncao__start {
-    background-color: $primaryColor;
-    &-text {
-        padding: 80px 30px;
-        text-align: center;
-        color: #fff;
-    }
-}
-.juncao__end {
-    padding-bottom: 25px;
 }
 
 .problem__decision-section {
-    background: $primaryColor;
-    .mobile__dark,
-    .mobile__green {
-        padding: 50px 30px;
-        svg {
-            width: 80px;
-            height: 80px;
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 40px;
-        }
+    background: linear-gradient(to right, #d9e7ff 50%, #dff1e5 50%);
+    .secondary-block,
+    .tertiary-block {
+        padding: 80px 40px;
     }
-    .mobile__dark {
+    .secondary-block {
         color: $secondaryColor;
-        svg {
-            fill: $secondaryColor;
-        }
     }
-    .mobile__green {
-        color: #fff;
-        svg {
-            fill: #fff;
-        }
+    .tertiary-block {
+        color: $tertiaryColor;
     }
-}
-
-.advice__text {
-    padding: 60px;
-    font-style: italic;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-// dfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfjo
-.adoptogen {
-    padding: 100px 0;
-    background-color: $primaryColor;
-    p {
-        text-align: center;
-        margin: 40px;
-        font-weight: bold;
-    }
-}
-.adoptogen-item {
-    padding: 30px 20px;
-    height: 100%;
-    background-color: $secondaryColor;
-    color: #fff;
-    border-radius: 50px;
-}
-.millions {
-    padding: 70px 0;
-    color: $primaryColor;
-    font-family: "Playfair Display", serif;
-    font-style: italic;
-    background-color: $secondaryColor;
-    font-size: 20px;
 }
 
 .choise-block {
@@ -118,12 +63,14 @@
     }
 }
 
+@media (max-width: 767px) {
+    .problem__decision-section {
+        background: linear-gradient(to bottom, #d9e7ff 50%, #dff1e5 50%);
+    }
+}
 @media (max-width: 575px) {
     .about-us h4 {
         font-size: 28px;
-    }
-    .advice__text {
-        padding: 60px 0;
     }
     .choise-block {
         padding: 50px 5px;
