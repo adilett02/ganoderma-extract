@@ -1,10 +1,10 @@
 //footer
 .footer {
     padding: 40px 0;
-    // background-color: $primaryColor;
     color: #000;
     .conditions-text {
         color: $secondaryColor;
+        text-decoration: underline;
     }
 }
 .social__list {
